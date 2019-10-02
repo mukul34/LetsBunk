@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/SettingFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/backgroundColor"
+    tools:context=".Fragment.SettingFragment">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/rl"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:textColor="?attr/textColor"
+            android:layout_marginTop="10dp"
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Percentage Criteria"
+            android:textSize="16sp"
+            />
+        <EditText
+            android:textColor="?attr/textColor"
+            android:id="@+id/perCriteria"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="85dp"
+            android:textSize="16sp"
+            android:hint="Enter here"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/setButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:text="Set"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+
+            android:textColor="?attr/textColor"
+            android:background="?attr/backgroundColor"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_light"
+            android:text="By Default percentage Criteria is set to be 75%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+         />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <TextView
+
+            android:id="@+id/newCriteria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_light"
+            />
+        <TextView
+            android:textColor="?attr/textColor"
+            android:layout_alignParentBottom="true"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Mode"
+            />
+
+        <Switch
+            android:id="@+id/dark_mode_switch"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>
+</LinearLayout>
