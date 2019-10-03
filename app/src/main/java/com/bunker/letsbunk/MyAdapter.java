@@ -126,15 +126,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
             }
         });
 
-        holder.edit.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                performEdit(holder);
-            }
-        });
-
 
     }
 
@@ -222,7 +213,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
             shw_text=itemView.findViewById(R.id.show_text);
             delete=itemView.findViewById(R.id.delete);
             percentage=itemView.findViewById(R.id.percentage);
-            edit =itemView.findViewById(R.id.edit_button);
         }
     }
 
@@ -278,14 +268,5 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
 
         return  percentage;
     }
-
-    private void performEdit(ViewHolder holder)
-    {
-        holder.Attended.setFocusable(true);
-        holder.Attended.setEnabled(true);
-        holder.Attended.setClickable(true);
-        holder.Attended.setFocusableInTouchMode(true);
-    }
-
-
+    
 }
