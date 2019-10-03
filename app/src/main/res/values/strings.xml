@@ -16,8 +16,19 @@
 
     <string name="fbID">1304539289717506</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message">Messages sent by Lets Bunk will be</string>
+    <string name="displayed_here">displayed here</string>
+    <string name="total_lectures">Total Lectures</string>
+    <string name="attended_lectures">Attended Lectures</string>
+    <string name="subject_name">Subject Name</string>
+    <string name="set_percentage_criteria">Set Percentage Criteria</string>
+    <string name="enter_here">Enter here</string>
+    <string name="set">Set</string>
+    <string name="criteria">By Default percentage Criteria is set to be 75%</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="submit">Submit</string>
+    <string name="enter_name">Enter Name</string>
 
 
 </resources>

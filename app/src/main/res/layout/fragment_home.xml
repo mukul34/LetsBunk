@@ -19,12 +19,10 @@
         app:fabSize="normal"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
-        android:backgroundTint="?attr/backgroundTintForFab"
-
+        app:backgroundTint="?attr/backgroundTintForFab"
         android:id="@+id/add_Field"
         android:src="@drawable/ic_create"
         android:layout_margin="10dp"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"

@@ -6,28 +6,48 @@
     tools:context=".Fragment.MessageFragment"
     android:background="@drawable/background">
 
-    <RelativeLayout
+    <LinearLayout
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
-        android:layout_gravity="center"
+        android:orientation="vertical"
         >
-    <ImageView
-        android:id="@+id/messageImage"
-        android:layout_marginStart="100dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/lightmode_msg"
-        />
-    <TextView
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        android:layout_alignParentBottom="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/background_light"
-        android:text="Messages sent by Lets Bunk will be \n
-                    displayed here"/>
-    </RelativeLayout>
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/messageImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lightmode_msg"
+                />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_above="@+id/mes"
+                android:textColor="@android:color/background_light"
+                android:text="@string/message"
+                />
+            <TextView
+                android:id="@+id/mes"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_alignParentBottom="true"
+                android:text="@string/displayed_here"
+                android:textColor="@android:color/background_light"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
 </FrameLayout>

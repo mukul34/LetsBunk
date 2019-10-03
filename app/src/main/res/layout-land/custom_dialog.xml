@@ -14,11 +14,11 @@
             android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
-                android:text="Subject Name"
+                android:text="@string/subject_name"
                 android:textSize="20sp"
                 android:textColor="?attr/textColor"
                 android:layout_marginTop="25dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_height="wrap_content" />
             <EditText
                 android:id="@+id/name"
@@ -30,9 +30,9 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="25sp"
-                android:hint="Enter Name"/>
+                android:hint="@string/enter_name"/>
 
-            </LinearLayout>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,9 +43,9 @@
                 android:layout_width="wrap_content"
                 android:textColor="?attr/textColor"
                 android:layout_height="wrap_content"
-                android:text="Attended Lectures"
+                android:text="@string/attended_lectures"
                 android:textSize="20sp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 />
             <EditText
                 android:inputType="number"
@@ -57,7 +57,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:textSize="16sp"
-                android:hint="Attended Lectures"
+                android:hint="@string/attended_lectures"
                 />
         </LinearLayout>
         <LinearLayout
@@ -66,25 +66,24 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_marginStart="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
-                android:text="Total Lectures"
+                android:text="@string/total_lectures"
                 android:textColor="?attr/textColor"
-                android:textSize="20sp"
-                android:layout_marginLeft="10dp" />
+                android:textSize="20sp" />
 
             <EditText
-                android:textColor="?attr/textColor"
-                android:inputType="number"
                 android:id="@+id/tot"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
-                android:hint="Total Lectures"
+                android:layout_marginRight="10dp"
+                android:hint="@string/total_lectures"
+                android:inputType="number"
+                android:textColor="?attr/textColor"
                 android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
@@ -97,9 +96,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textSize="18sp"
         android:layout_gravity="center"
         />
 
-    </LinearLayout>
+</LinearLayout>

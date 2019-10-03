@@ -22,7 +22,7 @@
             android:id="@+id/set"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Set Percentage Criteria"
+            android:text="@string/set_percentage_criteria"
             android:textSize="16sp"
             />
         <EditText
@@ -32,7 +32,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="85dp"
             android:textSize="16sp"
-            android:hint="Enter here"
+            android:hint="@string/enter_here"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="5dp"
             android:textStyle="bold"
-            android:text="Set"
+            android:text="@string/set"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
 
             android:textColor="?attr/textColor"
@@ -56,7 +56,7 @@
         <TextView
             android:textStyle="bold"
             android:textColor="@android:color/holo_orange_light"
-            android:text="By Default percentage Criteria is set to be 75%"
+            android:text="@string/criteria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:fontFamily="@font/montserrat"
-            android:text="Dark Mode"
+            android:text="@string/dark_mode"
             android:textColor="?attr/textColor"
             android:textSize="16sp" />
 

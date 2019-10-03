@@ -255,8 +255,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
         if (ntot>0)
         {
             holder.answer.setText("You can bunk "+ntot+" lectures");
+
+            holder.answer.setTextColor(activity.getResources().getColor(R.color.answerColor));
         }else {
             holder.answer.setText("You can not bunk lecture");
+            holder.answer.setTextColor(activity.getResources().getColor(R.color.answer));
         }
         return ntot;
     }
@@ -268,5 +271,5 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
 
         return  percentage;
     }
-    
+
 }
