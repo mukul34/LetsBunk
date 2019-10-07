@@ -17,7 +17,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
 
@@ -28,25 +27,19 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
 {
 
-    Activity activity;
-    ArrayList<Data> data;
-    LayoutInflater inflater;
-    SharedPreferences pref;
-    SharedPreferences.Editor editor;
-    int criteria=0;
-    Database database;
+    private Activity activity;
+    private ArrayList<Data> data;
+    private LayoutInflater inflater;
+    private SharedPreferences pref;
+    private SharedPreferences.Editor editor;
+    private int criteria=0;
+    private Database database;
     public  static final String name ="attendance";
-    DecimalFormat precision = new DecimalFormat("0.00");
-
-
-
-
-
+    private DecimalFormat precision = new DecimalFormat("0.00");
 
     public MyAdapter(Activity activity,ArrayList<Data> data)
     {
@@ -56,9 +49,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
         inflater=LayoutInflater.from(activity);
     }
 
-    @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {
         LayoutInflater LI=activity.getLayoutInflater();
         View vw=LI.inflate(R.layout.subject_info,null);
@@ -67,7 +59,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position)
+    public void onBindViewHolder(final ViewHolder holder, final int position)
     {
 
 
@@ -275,7 +267,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
                 int total = Integer.parseInt(total_dialog.getText().toString());
 
                  if (attended <= total) {
-
                      set_and_update(holder,id,attended,total);
                      dialog.cancel();
                  }
