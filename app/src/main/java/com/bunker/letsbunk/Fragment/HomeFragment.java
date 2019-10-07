@@ -50,11 +50,7 @@ public class HomeFragment extends Fragment {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
-
-        /*recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),
-                DividerItemDecoration.VERTICAL));*/
-
+        
         add = v.findViewById(R.id.add_Field);
 
 
@@ -75,7 +71,6 @@ public class HomeFragment extends Fragment {
     private void setData() {
         ArrayList<Data> arrayList = new ArrayList<>(database.getDataDao().getAllrecord());
         adapter = new MyAdapter(getActivity(), arrayList);
-       // recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), 0));
         recyclerView.setAdapter(adapter);
     }
 
