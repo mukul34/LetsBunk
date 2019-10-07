@@ -19,7 +19,7 @@
                 android:textColor="?attr/textColor"
                 android:layout_height="wrap_content"
                 android:text="@string/attended_lectures"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:layout_marginStart="10dp"
                 />
             <EditText
@@ -31,7 +31,7 @@
                 android:textColor="?attr/textColor"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:hint="@string/attended_lectures"
                 />
         </LinearLayout>
@@ -47,7 +47,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/total_lectures"
                 android:textColor="?attr/textColor"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/tot"
@@ -59,7 +59,7 @@
                 android:hint="@string/total_lectures"
                 android:inputType="number"
                 android:textColor="?attr/textColor"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 

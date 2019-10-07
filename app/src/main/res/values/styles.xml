@@ -10,8 +10,8 @@
         <item name="colorAccent">@color/primaryLightColor</item>
         <item name="windowActionBar">false</item>
         <item name="backgroundColor">#ffff</item>
-        <item name="cardBackground">#ffffff</item>
-        <item name="textColor">@color/primaryColor</item>
+        <item name="cardBackground">#406A95C3</item>
+        <item name="textColor">#319C45</item>
         <item name="backgroundTintForFab">@color/primaryColor</item>
         <item name="backgroundTintForFabPresent">#007c00</item>
         <item name="backgroundTintForFabAbsent">#b71c1c</item>
@@ -52,7 +52,7 @@
         <item name="backgroundTintForFabAbsent">#303030</item>
         <item name="backgroundColor">#303030</item>
         <item name="cardBackground">#424242</item>
-        <item name="textColor">@color/primaryLightColor</item>
+        <item name="textColor">#319C45</item>
         <item name="tintColor">#1976d2</item>
         <item name="buttonColor">#004ba0</item>
         <item name="windowNoTitle">true</item>

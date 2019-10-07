@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="290dp">
+    android:layout_height="270dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:text="@string/subject_name"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="?attr/textColor"
                 android:layout_marginTop="25dp"
                 android:layout_marginStart="10dp"
@@ -24,7 +24,7 @@
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:inputType="text"
                 android:textColor="?attr/textColor"
                 android:layout_marginLeft="10dp"
@@ -44,7 +44,7 @@
                 android:textColor="?attr/textColor"
                 android:layout_height="wrap_content"
                 android:text="@string/attended_lectures"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:layout_marginStart="10dp"
                 />
             <EditText
@@ -56,7 +56,7 @@
                 android:textColor="?attr/textColor"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:hint="@string/attended_lectures"
                 />
         </LinearLayout>
@@ -72,19 +72,19 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/total_lectures"
                 android:textColor="?attr/textColor"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/tot"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="10dp"
                 android:hint="@string/total_lectures"
                 android:inputType="number"
                 android:textColor="?attr/textColor"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 

@@ -51,9 +51,9 @@ public class HomeFragment extends Fragment {
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
 
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        /*recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),
-                DividerItemDecoration.VERTICAL));
+                DividerItemDecoration.VERTICAL));*/
 
         add = v.findViewById(R.id.add_Field);
 
@@ -67,85 +67,6 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 performCheck();
-
-
-/*
-                final Dialog dialog = new Dialog(getActivity());
-                dialog.setContentView(R.layout.custom_dialog);
-
-                attended_dialog = dialog.findViewById(R.id.att);
-                total_dialog = dialog.findViewById(R.id.tot);
-                subName_dialog = dialog.findViewById(R.id.name);
-
-                submitButton = dialog.findViewById(R.id.submit);
-
-                submitButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        try {
-                            int attended = Integer.parseInt(attended_dialog.getText().toString());
-                            int total = Integer.parseInt(total_dialog.getText().toString());
-                            String name = subName_dialog.getText().toString();
-
-                            List<String> nList = database.getDataDao().getAllNames();
-                            int n = 2;
-                            for (String nListSubName : nList) {
-                                if (nListSubName.equalsIgnoreCase(name)) {
-                                    n = 0;
-                                    break;
-                                } else {
-                                    n = 1;
-                                }
-                            }
-                            if (n == 0) {
-                                subName_dialog.setError("Change subject name");
-                            }
-                            if (subName_dialog.getText().toString().isEmpty()) {
-                                subName_dialog.setError("Enter subject name");
-                            } else {
-                                if (n == 1 || n == 2) {
-                                    if (attended > total) {
-                                        attended_dialog.setError("Not more than total lectures");
-                                    }
-                                    if (attended <= total) {
-
-                                        Data data = new Data(name, attended, total);
-                                        long value = database.getDataDao().addAttendance(data);
-                                        if (value > 0) {
-                                            Toast.makeText(getActivity(), "Done", Toast.LENGTH_SHORT).show();
-                                        } else {
-                                            Toast.makeText(getActivity(), "Try Again", Toast.LENGTH_SHORT).show();
-                                        }
-
-                                        setData();
-
-                                        adapter.notifyDataSetChanged();
-                                        dialog.cancel();
-                                    }
-                                }
-                            }
-                        } catch (Exception e) {
-
-                            if (attended_dialog.getText().toString().isEmpty()) {
-                                Toast.makeText(getActivity(), "Try Again",
-                                        Toast.LENGTH_SHORT).show();
-                            }
-                            if (total_dialog.getText().toString().isEmpty()) {
-                                Toast.makeText(getActivity(), "Try Again",
-                                        Toast.LENGTH_SHORT).show();
-                            }
-                            if (subName_dialog.getText().toString().isEmpty()) {
-                                Toast.makeText(getActivity(), "Try Again",
-                                        Toast.LENGTH_SHORT).show();
-                            } else
-                                Toast.makeText(getActivity(), "" + e.getMessage(),
-                                        Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });*/
-               /* dialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT,
-                        LinearLayout.LayoutParams.WRAP_CONTENT);
-                dialog.show();*/
             }
         });
         return v;
@@ -154,6 +75,7 @@ public class HomeFragment extends Fragment {
     private void setData() {
         ArrayList<Data> arrayList = new ArrayList<>(database.getDataDao().getAllrecord());
         adapter = new MyAdapter(getActivity(), arrayList);
+       // recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), 0));
         recyclerView.setAdapter(adapter);
     }
 
