@@ -64,7 +64,6 @@
     </LinearLayout>
 
     <Button
-
         android:id="@+id/submit"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:textStyle="bold"
