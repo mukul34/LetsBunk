@@ -10,9 +10,10 @@
     tools:context=".Fragment.SettingFragment">
 
     <LinearLayout
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
         <TextView
@@ -29,24 +30,28 @@
             android:textSize="16sp"
             android:textColor="?attr/textColor"
             android:id="@+id/perCriteria"
-            android:hint="@string/enter_here"
-            android:layout_width="wrap_content"
+            android:hint="       "
+            android:inputType="number"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             />
-
-
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
         <Button
-            android:layout_weight="0"
+            android:layout_alignParentEnd="true"
             android:id="@+id/setButton"
-            android:layout_marginEnd="5dp"
             android:textStyle="bold"
             android:text="@string/set"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
+        </RelativeLayout>
     </LinearLayout>
     <TextView
         android:layout_margin="10dp"

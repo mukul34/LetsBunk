@@ -18,7 +18,7 @@ import com.bunker.letsbunk.R;
 
 public class MessageFragment extends Fragment {
 
-    SharedPref sharedPref;
+    private SharedPref sharedPref;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)

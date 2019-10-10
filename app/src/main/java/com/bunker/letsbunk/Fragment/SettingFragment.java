@@ -20,15 +20,15 @@ import com.bunker.letsbunk.R;
 
 public class SettingFragment extends Fragment
 {
-    EditText per_criteria;
-    Button setCriteria;
-    int criteria=75;
-    SharedPreferences pref;
-    SharedPreferences.Editor editor;
-    TextView nCrit;
-    String nCriteria;
-    Switch aSwitch;
-    SharedPref sharedPref;
+    private EditText per_criteria;
+    private Button setCriteria;
+    private int criteria=75;
+    private SharedPreferences pref;
+    private SharedPreferences.Editor editor;
+    private TextView nCrit;
+    private String nCriteria;
+    private Switch aSwitch;
+    private SharedPref sharedPref;
 
     public  static final String name ="attendance";
     @Override
@@ -64,15 +64,20 @@ public class SettingFragment extends Fragment
             @Override
             public void onClick(View view)
             {
-                criteria=Integer.parseInt(per_criteria.getText().toString());
-                nCriteria=per_criteria.getText().toString();
-                editor.putInt("criteria_key",criteria);
-                editor.putString("show_criteria",nCriteria);
-                editor.apply();
-                per_criteria.setText("");
-                nCrit.setText("You set the criteria to be "+nCriteria+"%");
+                if (per_criteria.getText().toString().isEmpty())
+                {
+                    return;
+                }else {
+                    criteria = Integer.parseInt(per_criteria.getText().toString());
+                    nCriteria = per_criteria.getText().toString();
+                    editor.putInt("criteria_key", criteria);
+                    editor.putString("show_criteria", nCriteria);
+                    editor.apply();
+                    per_criteria.setText("");
+                    nCrit.setText("You set the criteria to be " + nCriteria + "%");
 
-                Toast.makeText(getActivity(), "Done", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Done", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -85,6 +90,7 @@ public class SettingFragment extends Fragment
           public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
               if (b)
               {
+
                   sharedPref.setNightModeState(true);
                   loadTheme();
                   restartApp();

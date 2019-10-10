@@ -29,13 +29,13 @@ import java.util.List;
 
 
 public class HomeFragment extends Fragment {
-    RecyclerView recyclerView;
-    FloatingActionButton add;
-    MyAdapter adapter;
+    private RecyclerView recyclerView;
+    private FloatingActionButton add;
+    private MyAdapter adapter;
 
-    Button submitButton;
+    private Button submitButton;
 
-    Database database;
+    private Database database;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -87,12 +87,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view)
             {
-                int attended = Integer.parseInt(attended_dialog.getText().toString());
-                int total = Integer.parseInt(total_dialog.getText().toString());
-                String name = subName_dialog.getText().toString();
-                List<String> nList = database.getDataDao().getAllNames();
 
                 try {
+                    int attended = Integer.parseInt(attended_dialog.getText().toString());
+                    int total = Integer.parseInt(total_dialog.getText().toString());
+                    String name = subName_dialog.getText().toString();
+                    List<String> nList = database.getDataDao().getAllNames();
+
                     boolean flag = false;
                     for (String nListSubName : nList) {
                         if (nListSubName.equalsIgnoreCase(name)) {
